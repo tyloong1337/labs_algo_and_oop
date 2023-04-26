@@ -1,6 +1,5 @@
 #include "pair.h"
 
-// Перегрузка оператора ввода для класса Pair
 std::istream& operator>>(std::istream& is, Pair& p) {
     int f;
     double s;
@@ -16,7 +15,6 @@ std::istream& operator>>(std::istream& is, Pair& p) {
     return is;
 }
 
-// Перегрузка оператора вывода для класса Pair
 std::ostream& operator<<(std::ostream& os, const Pair& p) {
     os << p.getFirst() << ":" << p.getSecond();
     return os;
